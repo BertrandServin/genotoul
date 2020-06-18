@@ -3,7 +3,8 @@
 #SBATCH --cpus-per-task=32
 #SBATCH --mem-per-cpu=7GB
 #SBATCH --nodes=2
-#SBAT --tasks-per-node 1
+#SBATCH --tasks-per-node 1
+#SBATCH --mail-type=ALL
 
 ## !!! Adjust the CPUS_PER_TASK variable below manually !!!
 echo "*** Allocating $SLURM_MEM_PER_CPU  Mb per cpu"
